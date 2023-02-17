@@ -15,7 +15,7 @@ you to use the Blade component to insert inline SVG images.
 
 Run this at the command line:
 ```php
-$ composer require orchid/blade-icons
+$ composer require syntax/blade-icons
 ```
 This will update `composer.json` and install the package into the `vendor/` directory.
 
@@ -25,7 +25,7 @@ Register a directory with your files in the service provider:
 ```php
 namespace App\Providers;
 
-use Orchid\Icons\IconFinder;
+use Syntax\Icons\IconFinder;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -68,7 +68,7 @@ If you are using icons from the same set, it makes sense to specify a default si
 ```php
 namespace App\Providers;
 
-use Orchid\Icons\IconFinder;
+use Syntax\Icons\IconFinder;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -88,12 +88,12 @@ If you use different sets, for example, in the public part of the application an
 namespace App\Http\Middleware;
  
 use Closure;
-use Orchid\Icons\IconFinder;
+use Syntax\Icons\IconFinder;
  
 class ExampleMiddleware
 {
     /**
-     * @var \Orchid\Icons\IconFinder 
+     * @var \Syntax\Icons\IconFinder 
      */
     protected $iconFinder;
 
