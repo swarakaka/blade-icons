@@ -1,5 +1,5 @@
 {
-    "name": "syntax/blade-icons",
+    "name": "syntax/icons",
     "version": "1.0.0",
     "description": "An easy way inline SVG images in your Blade templates.",
     "type": "library",
