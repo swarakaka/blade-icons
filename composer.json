@@ -1,5 +1,5 @@
 {
-    "name": "orchid/blade-icons",
+    "name": "syntax/blade-icons",
     "description": "An easy way inline SVG images in your Blade templates.",
     "type": "library",
     "license": "MIT",
