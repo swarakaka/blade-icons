@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Syntax\Icons\Tests;
+namespace Qaslan\Icons\Tests;
 
 use Illuminate\Support\Facades\Blade;
-use Syntax\Icons\IconFinder;
+use Qaslan\Icons\IconFinder;
 
 class BladeComponentTest extends TestUnitCase
 {
@@ -72,7 +72,7 @@ class BladeComponentTest extends TestUnitCase
             ->setSize('54px', '54px')
             ->registerIconDirectory('foo', __DIR__ . '/stubs/foo');
 
-        $view = Blade::render('<x-syntax-icon path="foo.house" />');
+        $view = Blade::render('<x-qaslan-icon path="foo.house" />');
 
         $this->assertStringContainsString('height="54px"', $view);
         $this->assertStringContainsString('width="54px"', $view);
@@ -84,10 +84,10 @@ class BladeComponentTest extends TestUnitCase
             ->setSize('54px', '54px')
             ->registerIconDirectory('foo', __DIR__ . '/stubs/foo');
 
-        $view = Blade::render('<x-syntax-icon path="foo.regular.address-book" />');
+        $view = Blade::render('<x-qaslan-icon path="foo.regular.address-book" />');
         $this->assertNotEmpty($view);
 
-        $view = Blade::render('<x-syntax-icon path="regular.address-book" />');
+        $view = Blade::render('<x-qaslan-icon path="regular.address-book" />');
         $this->assertEmpty($view);
     }
 
@@ -97,12 +97,12 @@ class BladeComponentTest extends TestUnitCase
             ->setSize('54px', '54px')
             ->registerIconDirectory('feather', __DIR__ . '/stubs/feather');
 
-        $view = Blade::render('<x-syntax-icon path="feather.alert-triangle" />');
+        $view = Blade::render('<x-qaslan-icon path="feather.alert-triangle" />');
         $this->assertNotEmpty($view);
 
         $this->assertStringContainsString('stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"', $view);
 
-        $view = Blade::render('<x-syntax-icon path="feather.alert-triangle" class="test" stroke-width="3" />');
+        $view = Blade::render('<x-qaslan-icon path="feather.alert-triangle" class="test" stroke-width="3" />');
 
         $this->assertStringNotContainsString('stroke-width="2"', $view);
         $this->assertStringContainsString('stroke-width="3"', $view);
@@ -114,10 +114,10 @@ class BladeComponentTest extends TestUnitCase
             ->setSize('54px', '54px')
             ->registerIconDirectory('feather', __DIR__ . '/stubs/feather');
 
-        $view = Blade::render('<x-syntax-icon path="feather.alert-triangle" id="2" :id="3" />');
+        $view = Blade::render('<x-qaslan-icon path="feather.alert-triangle" id="2" :id="3" />');
         $this->assertStringContainsString('id="3"', $view);
 
-        $view = Blade::render('<x-syntax-icon path="feather.alert-triangle" :id="3" id="2" />');
+        $view = Blade::render('<x-qaslan-icon path="feather.alert-triangle" :id="3" id="2" />');
         $this->assertStringContainsString('id="2"', $view);
     }
 
@@ -132,7 +132,7 @@ class BladeComponentTest extends TestUnitCase
 
 
         collect(range(0, 10000))->each(function (){
-            $view = Blade::render('<x-syntax-icon path="feather.alert-triangle" id="2" :id="3" />');
+            $view = Blade::render('<x-qaslan-icon path="feather.alert-triangle" id="2" :id="3" />');
             $this->assertStringContainsString('id="3"', $view);
         });
     }

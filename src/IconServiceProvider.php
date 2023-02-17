@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Syntax\Icons;
+namespace Qaslan\Icons;
 
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
@@ -19,7 +19,7 @@ class IconServiceProvider extends ServiceProvider
             return new IconFinder();
         });
 
-        Blade::component('syntax-icon', IconComponent::class);
+        Blade::component('qaslan-icon', IconComponent::class);
     }
 }
 

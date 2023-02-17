@@ -1,7 +1,7 @@
 # Inline SVG Icons For Laravel Blade
 
 
-<a href="https://github.com/swarakaka/syntax-blade-icons/actions"><img src="https://github.com/swarakaka/syntax-blade-icons/workflows/Tests/badge.svg"></a>
+<a href="https://github.com/swarakaka/blade-icons/actions"><img src="https://github.com/swarakaka/blade-icons/workflows/Tests/badge.svg"></a>
 
 
 ## Introduction
@@ -13,7 +13,7 @@ you to use the Blade component to insert inline SVG images.
 
 Run this at the command line:
 ```php
-$ composer require syntax/blade-icons
+$ composer require qaslan/blade-icons
 ```
 This will update `composer.json` and install the package into the `vendor/` directory.
 
@@ -23,7 +23,7 @@ Register a directory with your files in the service provider:
 ```php
 namespace App\Providers;
 
-use Syntax\Icons\IconFinder;
+use Qaslan\Icons\IconFinder;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -40,19 +40,19 @@ When calling the directory method with the first argument, we pass the prefix to
 After that, we can call the component in our blade templates:
 
 ```blade
-<x-syntax-icon path="fa.home" />
+<x-qaslan-icon path="fa.home" />
 ```
 
 If you use one or two sets of icons that do not repeat, then it is not necessary to specify a prefix in the component:
 
 ```blade
-<x-syntax-icon path="home" />
+<x-qaslan-icon path="home" />
 ```
 
 You can also list some attributes that should be applied to your icon:
 
 ```blade
-<x-syntax-icon 
+<x-qaslan-icon 
     path="home" 
     class="icon-big" 
     width="2em" 
@@ -66,7 +66,7 @@ If you are using icons from the same set, it makes sense to specify a default si
 ```php
 namespace App\Providers;
 
-use Syntax\Icons\IconFinder;
+use Qaslan\Icons\IconFinder;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -86,12 +86,12 @@ If you use different sets, for example, in the public part of the application an
 namespace App\Http\Middleware;
  
 use Closure;
-use Syntax\Icons\IconFinder;
+use Qaslan\Icons\IconFinder;
  
 class ExampleMiddleware
 {
     /**
-     * @var \Syntax\Icons\IconFinder 
+     * @var \Qaslan\Icons\IconFinder 
      */
     protected $iconFinder;
 

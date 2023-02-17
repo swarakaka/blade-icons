@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Syntax\Icons;
+namespace Qaslan\Icons;
 
 use DOMDocument;
 use Illuminate\Support\Arr;

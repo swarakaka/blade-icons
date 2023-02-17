@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Syntax\Icons;
+namespace Qaslan\Icons;
 
 use Illuminate\Support\Collection;
 use Illuminate\Support\Str;

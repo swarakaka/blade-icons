@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Syntax\Icons\Tests;
+namespace Qaslan\Icons\Tests;
 
-use Syntax\Icons\IconFinder;
+use Qaslan\Icons\IconFinder;
 
 class FinderTest extends TestUnitCase
 {

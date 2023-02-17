@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Syntax\Icons\Tests;
+namespace Qaslan\Icons\Tests;
 
 use Orchestra\Testbench\TestCase;
-use Syntax\Icons\IconServiceProvider;
+use Qaslan\Icons\IconServiceProvider;
 
 /**
  * Class TestUnitCase.

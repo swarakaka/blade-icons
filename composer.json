@@ -23,18 +23,18 @@
     },
     "autoload": {
         "psr-4": {
-            "Syntax\\Icons\\": "src/"
+            "Qaslan\\Icons\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Syntax\\Icons\\Tests\\": "tests/"
+            "Qaslan\\Icons\\Tests\\": "tests/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Syntax\\Icons\\IconServiceProvider"
+                "Qaslan\\Icons\\IconServiceProvider"
             ]
         }
     }
