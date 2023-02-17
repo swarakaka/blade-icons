@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Orchid\Icons\Tests;
+namespace Syntax\Icons\Tests;
 
-use Orchid\Icons\IconFinder;
+use Syntax\Icons\IconFinder;
 
 class FinderTest extends TestUnitCase
 {

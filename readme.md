@@ -1,9 +1,7 @@
 # Inline SVG Icons For Laravel Blade
 
 
-<a href="https://github.com/orchidsoftware/blade-icons/actions"><img src="https://github.com/orchidsoftware/blade-icons/workflows/Tests/badge.svg"></a>
-<a href="https://packagist.org/packages/orchid/blade-icons"><img alt="Packagist" src="https://img.shields.io/packagist/dt/orchid/blade-icons.svg"></a>
-<a href="https://packagist.org/packages/orchid/blade-icons"><img alt="Packagist Version" src="https://img.shields.io/packagist/v/orchid/blade-icons.svg"></a>
+<a href="https://github.com/swarakaka/syntax-blade-icons/actions"><img src="https://github.com/swarakaka/syntax-blade-icons/workflows/Tests/badge.svg"></a>
 
 
 ## Introduction
@@ -42,19 +40,19 @@ When calling the directory method with the first argument, we pass the prefix to
 After that, we can call the component in our blade templates:
 
 ```blade
-<x-orchid-icon path="fa.home" />
+<x-syntax-icon path="fa.home" />
 ```
 
 If you use one or two sets of icons that do not repeat, then it is not necessary to specify a prefix in the component:
 
 ```blade
-<x-orchid-icon path="home" />
+<x-syntax-icon path="home" />
 ```
 
 You can also list some attributes that should be applied to your icon:
 
 ```blade
-<x-orchid-icon 
+<x-syntax-icon 
     path="home" 
     class="icon-big" 
     width="2em" 

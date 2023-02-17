@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Orchid\Icons\Tests;
+namespace Syntax\Icons\Tests;
 
 use Orchestra\Testbench\TestCase;
-use Orchid\Icons\IconServiceProvider;
+use Syntax\Icons\IconServiceProvider;
 
 /**
  * Class TestUnitCase.

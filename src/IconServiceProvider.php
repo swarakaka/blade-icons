@@ -19,7 +19,7 @@ class IconServiceProvider extends ServiceProvider
             return new IconFinder();
         });
 
-        Blade::component('orchid-icon', IconComponent::class);
+        Blade::component('syntax-icon', IconComponent::class);
     }
 }
 
