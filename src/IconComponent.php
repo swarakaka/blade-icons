@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Orchid\Icons;
+namespace Syntax\Icons;
 
 use DOMDocument;
 use Illuminate\Support\Arr;

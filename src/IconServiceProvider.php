@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Orchid\Icons;
+namespace Syntax\Icons;
 
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
